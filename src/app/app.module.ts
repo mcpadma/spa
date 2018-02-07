@@ -7,6 +7,9 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import {routes} from './app-routing.module';
+import {RouterModule} from '@angular/router';
+
 import {ProductsModule} from './+products/products.module';
 import {ProductsService} from './services/products.service';
 import {CartService} from './services/cart.service';
@@ -23,6 +26,7 @@ import {Location, CommonModule} from '@angular/common';
     FormsModule,
     HttpModule,
     ProductsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [ProductsService, CartService, Location],
   bootstrap: [AppComponent]

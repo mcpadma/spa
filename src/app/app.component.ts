@@ -5,7 +5,7 @@ import {Observable} from 'rxjs';
 import {Product} from './classes/product';
 
 @Component({
-  selector: 'spa-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
